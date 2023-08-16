@@ -19,7 +19,7 @@
     "dotenv": "^8.2.0",
     "history": "^5.0.1",
     "netlify-lambda": "^2.0.1",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "3.3.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-ga": "^3.3.0",
@@ -31,7 +31,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "node set_config.js && react-scripts build",
+    "build": "node set_config.js && npm i && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start:lambda": "netlify-lambda serve functions"
